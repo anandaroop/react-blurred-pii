@@ -30,7 +30,7 @@
     "compile": "tsc",
     "watch": "tsc --watch",
     "type-check": "tsc --noEmit",
-    "lint": "eslint \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "prepare": "husky install",
     "test": "jest"
   },
