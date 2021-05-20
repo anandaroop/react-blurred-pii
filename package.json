@@ -4,5 +4,14 @@
   "description": "Blur UI elements containing PII, for screenshots and screencaps",
   "main": "index.js",
   "author": "@anandaroop",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "compile": "tsc",
+    "watch": "tsc --watch",
+    "type-check": "tsc --noEmit"
+  }
 }
