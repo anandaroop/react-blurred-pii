@@ -6,6 +6,8 @@
   "author": "@anandaroop",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
     "eslint": "^7.26.0",
