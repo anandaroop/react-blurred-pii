@@ -1,2 +1,2 @@
-const n: number = 42
+const n = 42
 console.log(n)
