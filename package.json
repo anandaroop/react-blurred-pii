@@ -1,6 +1,6 @@
 {
   "name": "@anandaroop/react-blurred-pii",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Blur UI elements containing PII, for screenshots and screencaps",
   "main": "dist",
   "author": "@anandaroop",
