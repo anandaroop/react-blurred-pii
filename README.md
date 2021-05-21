@@ -35,7 +35,7 @@ The first step is to wrap your app (or some component tree) in a `BlurredPIIProv
 ```diff
 +import { BlurredPIIProvider } from "@anandaroop/react-blurred-pii"
 
- export const Demo: React.FC = () => {
+ export const Demo = () => {
    return (
 +    <BlurredPIIProvider shouldBlur={true}>
        <MyApp>
@@ -52,7 +52,7 @@ Once wrapped, any descendant `PII` component will follow suit by blurring or un-
 -import { BlurredPIIProvider } from "@anandaroop/react-blurred-pii"
 +import { BlurredPIIProvider, PII } from "@anandaroop/react-blurred-pii"
 
- export const Demo: React.FC = () => {
+ export const Demo = () => {
    return (
      <BlurredPIIProvider shouldBlur={true}>
        <MyApp>
@@ -68,7 +68,7 @@ The final result:
 ```jsx
 import { BlurredPIIProvider, PII } from "@anandaroop/react-blurred-pii"
 
-export const Demo: React.FC = () => {
+export const Demo = () => {
   return (
     <BlurredPIIProvider shouldBlur={true}>
       <MyApp>
