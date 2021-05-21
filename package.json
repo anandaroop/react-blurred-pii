@@ -19,6 +19,7 @@
     "husky": ">=6",
     "jest": "^26.6.3",
     "lint-staged": ">=10",
+    "np": "^7.5.0",
     "prettier": "2.3.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
@@ -32,10 +33,19 @@
     "type-check": "tsc --noEmit",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "yarn clean && yarn compile",
+    "release": "np"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
